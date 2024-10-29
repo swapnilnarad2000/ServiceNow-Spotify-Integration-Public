@@ -19,13 +19,13 @@ ServiceNow REST Integration with Spotify
 ![image](https://github.com/user-attachments/assets/e446a0d4-7bdf-46da-b0c4-9147108af4b8)
 
 # Spotify Global Top Tracks Page
-![image](https://github.com/user-attachments/assets/03decfda-2775-4421-a76c-42c8d5100855)
+![image](https://github.com/user-attachments/assets/1dc56aa7-0bac-43d4-b95f-ee4550308943)
 
 # Spotify Global Top Tracks Page - Scroll
 ![image](https://github.com/user-attachments/assets/57b0caa1-df5e-429e-ba8d-c501556ea5c2)
 
 # Spotify India Top Tracks Page
-![image](https://github.com/user-attachments/assets/dd821495-1bd2-490e-a4ac-c0672ef57026)
+![image](https://github.com/user-attachments/assets/79354ae9-8051-4ddf-91ec-3816bd13fb68)
 
 # Spotify India Top Tracks Page - Scroll
 ![image](https://github.com/user-attachments/assets/6c1941a4-01eb-4b3d-914d-4bd2a0e79d7b)
@@ -37,4 +37,5 @@ ServiceNow REST Integration with Spotify
 ![image](https://github.com/user-attachments/assets/ae931ec5-185d-4b9d-8096-8799aa95d6cc)
 
 # Spotify System Playlist List View
-![image](https://github.com/user-attachments/assets/3442c072-80e8-4d85-81dd-5beda3141660)
+![image](https://github.com/user-attachments/assets/84971b0a-1ffc-4650-a4fc-a7dc6704a32d)
+
