@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2024-10-29 18:20:59">
+<sp_widget action="INSERT_OR_UPDATE">
+<category>custom</category>
+<client_script><![CDATA[api.controller = function($scope, $sce) {
+    /* widget controller */
+    var c = this;
+
+    $scope.initializeWidget = function() {
+        var inputParams = {
+            "action": "getTrackById"
+        };
+        c.server.get(inputParams).then(function(response) {
+            c.data.track_id = response.data.track_id;
+            c.data.track_data = JSON.parse(response.data.track_data);
+            $scope.track_url = $sce.trustAsResourceUrl(encodeURI("https://open.spotify.com/embed/track/" + c.data.track_data.id.toString() + "?utm_source=generator"));
+        });
+    };
+
+    $(document).ready(function() {
+        $scope.initializeWidget();
+    });
+};]]></client_script>
+<controller_as>c</controller_as>
+<css>.track-details-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.side-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+}</css>
+<data_table>sp_instance</data_table>
+<demo_data/>
+<description/>
+<docs display_value=""/>
+<field_list/>
+<has_preview>false</has_preview>
+<id>spotify_track_page_widget</id>
+<internal>false</internal>
+<link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+<name>Spotify Track Page Widget</name>
+<option_schema/>
+<public>false</public>
+<roles/>
+<script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  if(input && input.action == "getTrackById"){
+	data.track_id = $sp.getParameter('track_id');
+	var spotify_utils = new spotifyIntegrationUtil();
+	data.track_data = spotify_utils.getTrackById(data.track_id);
+	return;
+  };
+})();]]></script>
+<servicenow>false</servicenow>
+<sys_class_name>sp_widget</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-10-29 12:21:20</sys_created_on>
+<sys_id>91169d65c3e91e1005c053f1b40131cd</sys_id>
+<sys_mod_count>58</sys_mod_count>
+<sys_name>Spotify Track Page Widget</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sp_widget_91169d65c3e91e1005c053f1b40131cd</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-10-29 17:25:37</sys_updated_on>
+<template><![CDATA[<div>
+<!-- your widget template -->
+  <div><h1>{{c.data.track_data.name}}</h1><span><h3>by <span><a href="{{c.data.track_data.artist_url}}" target="_blank">{{c.data.track_data.artist}}</a></span></h3></span></div> 
+  <div class="track-details-block">
+    <iframe style="border-radius:12px" ng-src="{{track_url}}" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+  <!-- <div class="side-details">
+      <div class="album">
+        <h3>Album Name</h3>
+        <p class="album"><a href="{{c.data.track_data.album_url}}" target="_blank">{{c.data.track_data.album}}</a></p>
+      </div>
+      <div class="release">
+        <h3>Release Date</h3>
+        <p class="date">{{c.data.track_data.release_date}}</p>
+      </div>
+      <div class="duration">
+        <h3>Duration<span><p class="duration">{{c.data.track_data.duration | date:'hh:mm:ss'}}</p></span></h3>
+      </div>
+    </div> -->
+    <div class="disclaimer" ng-if="c.data.track_data.explicit">
+      <h4>Parental Advisory : This song contains explicit content.</h4>
+    </div>
+  
+</div>]]></template>
+</sp_widget>
+</unload>

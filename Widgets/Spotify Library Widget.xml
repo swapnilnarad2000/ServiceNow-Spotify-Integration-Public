@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2024-10-29 18:20:34">
+<sp_widget action="INSERT_OR_UPDATE">
+<category>custom</category>
+<client_script><![CDATA[api.controller = function() {
+    /* widget controller */
+    var c = this;
+	c.data.spotifyTracks = [];
+    var inputParams = {
+        "action": "getTracks"
+    };
+    c.server.get(inputParams).then(function(response) {
+		c.data.spotifyTracks = response.data.tracks.tracks;
+		console.log(c.data.spotifyTracks);
+    });
+};]]></client_script>
+<controller_as>c</controller_as>
+<css>.song-container{
+  margin: 20px 0px 0px 0px;
+  img{
+	height: 200px;
+  	width: 100%;
+  	aspect-ratio: 16/9;
+  	border-radius: 5px;
+  }
+}
+
+.song-container:hover{
+  .song-image-block img{
+    -webkit-filter: brightness(50%);
+  }
+}
+
+.album, .artist, .name, .date{
+	margin: 1px 0px 1px 0px;
+}
+
+.top-details{
+	display: flex;
+  	flex-direction: row;
+  	justify-content: space-between;
+}
+
+a{
+text-decoration: underline;
+}</css>
+<data_table>sp_instance</data_table>
+<demo_data/>
+<description/>
+<docs display_value=""/>
+<field_list/>
+<has_preview>false</has_preview>
+<id>spotify_library_widget</id>
+<internal>false</internal>
+<link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+<name>Spotify Library Widget</name>
+<option_schema/>
+<public>false</public>
+<roles/>
+<script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	if(input){
+		if(input.action == "getTracks"){
+			var spotifyUtils = new global.spotifyIntegrationUtil();
+			data.tracks = JSON.parse(spotifyUtils.getAllTracks());
+		}
+	}
+})();]]></script>
+<servicenow>false</servicenow>
+<sys_class_name>sp_widget</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-09-27 09:15:42</sys_created_on>
+<sys_id>bdc87b03c330121005c053f1b4013197</sys_id>
+<sys_mod_count>27</sys_mod_count>
+<sys_name>Spotify Library Widget</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sp_widget_bdc87b03c330121005c053f1b4013197</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-10-29 17:46:52</sys_updated_on>
+<template><![CDATA[<div>
+<!-- your widget template -->
+  <h1>Library</h1>
+  	<div class="row">
+      <div ng-repeat="track in c.data.spotifyTracks" class="col-md-3 song-container">
+        <div class="song-image-block">
+          <div class="overlay"></div>
+          <a href="?id=spotify_track_page&track_id={{track.id}}" target="_blank"><img src="{{track.image_url}}"></a>
+        </div>
+        <div class="top-details">
+          <p class="album"><a href="{{track.album_url}}" target="_blank">{{track.album}}</a></p>
+          <p class="date">{{track.release_date}}</p>
+        </div>
+        <h3 class="name"><a href="{{track.spotify_url}}" target="_blank">{{track.name}}</a></h3>
+        <p class="artist"><a href="{{track.artist_url}}" target="_blank">{{track.artist}}</a></p>
+      </div>
+	</div>
+</div>]]></template>
+</sp_widget>
+</unload>
