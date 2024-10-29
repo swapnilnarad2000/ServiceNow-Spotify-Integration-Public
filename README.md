@@ -12,6 +12,7 @@ ServiceNow REST Integration with Spotify
 5. Functionalities include
    * Get Top Tracks Globally.
    * Get Top Track Region Wise - India.
+   * Play preview for tracks
    * Create Playlist in your Spotify Account using ServiceNow.
    * Update Playlist in your Spotify Account using ServiceNow.
 
