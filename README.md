@@ -30,6 +30,9 @@ ServiceNow REST Integration with Spotify
 # Spotify India Top Tracks Page - Scroll
 ![image](https://github.com/user-attachments/assets/6c1941a4-01eb-4b3d-914d-4bd2a0e79d7b)
 
+# Spotify Track Page
+![image](https://github.com/user-attachments/assets/dcb345a4-b2de-432e-bf5e-0f065bb9812a)
+
 # Spotify System Tracks
 ![image](https://github.com/user-attachments/assets/ae931ec5-185d-4b9d-8096-8799aa95d6cc)
 
