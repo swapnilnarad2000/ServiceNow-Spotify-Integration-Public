@@ -15,6 +15,9 @@ ServiceNow REST Integration with Spotify
    * Play preview for tracks
    * Create Playlist in your Spotify Account using ServiceNow.
    * Update Playlist in your Spotify Account using ServiceNow.
+  
+# Demo Video
+https://github.com/user-attachments/assets/3518628b-b0c2-420b-b994-34c9deb70d62
 
 # Service Portal Home Page Menu
 ![image](https://github.com/user-attachments/assets/e446a0d4-7bdf-46da-b0c4-9147108af4b8)
