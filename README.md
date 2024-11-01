@@ -43,3 +43,7 @@ https://github.com/user-attachments/assets/3518628b-b0c2-420b-b994-34c9deb70d62
 # Spotify System Playlist List View
 ![image](https://github.com/user-attachments/assets/84971b0a-1ffc-4650-a4fc-a7dc6704a32d)
 
+# Spotify Regions Page
+![image](https://github.com/user-attachments/assets/8138aa5d-9d14-41ff-8a56-be18eb7b072c)
+
+
