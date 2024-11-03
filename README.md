@@ -1,4 +1,4 @@
-# ServiceNow-Spotify-Integration-Public
+# ServiceNow-Spotify-Integration
 ServiceNow REST Integration with Spotify 
 
 1. This integration is done with the help of REST Message OOB functionality of ServiceNow.
@@ -12,9 +12,18 @@ ServiceNow REST Integration with Spotify
 5. Functionalities include
    * Get Top Tracks Globally.
    * Get Top Track Region Wise - India.
-   * Play preview for tracks
    * Create Playlist in your Spotify Account using ServiceNow.
    * Update Playlist in your Spotify Account using ServiceNow.
+
+6. To Install The Application
+    * Create a developer account in Spotify. 
+    * Setup your OAuth credentials, client ID, client secret, token URL, refresh URL, also provide oAuth Redirect URIs of your servicenow instance. 
+    * Import Spotify Global Set vX.Y.Z first, accept any remote set update conflicts in preview and commit the update set.
+    * Then import the Spotify App vX.Y.Z set and accept any remote set update conflicts in preview and commit the update set.
+    * Visit the application registry module and update the Spotify Integrations and Spotify Integrations v2 records with your client ID and Secret, also update the oAuth Redirect URL instance prefix with your instance prefix.
+    * Visit the Outbound Rest Message module and visit Spotify Integrations and Spotify Integrations v2 and click on Related Link "Get oAuth Token" and a pop up will open that will close automatically and you are all set.
+    * If you receive some invalid response or error and pop up dont get closed automatically then you might have made some mistake during setting up Oauth credentials or redirect URIs etc.
+    * Visit https://<instance_prefix>.service-now.com/spotify to see the created app.
   
 # Demo Video
 https://github.com/user-attachments/assets/3518628b-b0c2-420b-b994-34c9deb70d62
