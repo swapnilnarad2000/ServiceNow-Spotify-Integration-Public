@@ -10,12 +10,14 @@ ServiceNow REST Integration with Spotify
 4. Apart from REST Message Creation this project involved creation of Widgets in ServiceNow alongside server side script include.
 
 5. Functionalities include
+   * Play Top Tracks globally and region from portal homepage.
+   * Browse region-wise top tracks. 
    * Get Top Tracks Globally.
    * Get Top Track Region Wise - India.
    * Create Playlist in your Spotify Account using ServiceNow.
    * Update Playlist in your Spotify Account using ServiceNow.
 
-6. To Install The Application
+7. To Install The Application
     * Create a developer account in Spotify. 
     * Setup your OAuth credentials, client ID, client secret, token URL, refresh URL, also provide oAuth Redirect URIs of your servicenow instance. 
     * Import Spotify Global Set vX.Y.Z first, accept any remote set update conflicts in preview and commit the update set.
@@ -26,33 +28,37 @@ ServiceNow REST Integration with Spotify
     * Visit https://<instance_prefix>.service-now.com/spotify to see the created app.
   
 # Demo Video
-https://github.com/user-attachments/assets/3518628b-b0c2-420b-b994-34c9deb70d62
+https://github.com/user-attachments/assets/c2056cc0-82df-4206-870e-7f17f8bc2e8c
 
 # Service Portal Home Page Menu
-![image](https://github.com/user-attachments/assets/e446a0d4-7bdf-46da-b0c4-9147108af4b8)
+![image](https://github.com/user-attachments/assets/99a04293-4c5d-4be3-b067-3d6f32ea1a95)
+
+# Spotify Regions Page
+![image](https://github.com/user-attachments/assets/7b3bec14-b674-49ee-bd15-7cc2bf9399cf)
 
 # Spotify Global Top Tracks Page
-![image](https://github.com/user-attachments/assets/1dc56aa7-0bac-43d4-b95f-ee4550308943)
+![image](https://github.com/user-attachments/assets/d6deb0af-2707-4f16-b426-4be4f171e66d)
 
 # Spotify Global Top Tracks Page - Scroll
-![image](https://github.com/user-attachments/assets/57b0caa1-df5e-429e-ba8d-c501556ea5c2)
+![image](https://github.com/user-attachments/assets/760005bc-ab23-468b-9bbc-a086e2928f28)
 
 # Spotify India Top Tracks Page
 ![image](https://github.com/user-attachments/assets/79354ae9-8051-4ddf-91ec-3816bd13fb68)
 
 # Spotify India Top Tracks Page - Scroll
-![image](https://github.com/user-attachments/assets/6c1941a4-01eb-4b3d-914d-4bd2a0e79d7b)
+![image](https://github.com/user-attachments/assets/03c9518d-0096-4bc0-8fbf-6f8d713eebff)
 
 # Spotify Track Page
-![image](https://github.com/user-attachments/assets/dcb345a4-b2de-432e-bf5e-0f065bb9812a)
+![image](https://github.com/user-attachments/assets/5bacd712-d590-421b-a645-1525033e3c02)
 
 # Spotify System Tracks
-![image](https://github.com/user-attachments/assets/ae931ec5-185d-4b9d-8096-8799aa95d6cc)
+![image](https://github.com/user-attachments/assets/f5b6f2d2-cc7b-486e-ab24-71873ffe4704)
 
 # Spotify System Playlist List View
-![image](https://github.com/user-attachments/assets/84971b0a-1ffc-4650-a4fc-a7dc6704a32d)
+![image](https://github.com/user-attachments/assets/f07bb6c2-5ea3-4f76-ba43-5c65c9c78613)
 
-# Spotify Regions Page
-![image](https://github.com/user-attachments/assets/8138aa5d-9d14-41ff-8a56-be18eb7b072c)
+# Spotify System Playlist Page
+![image](https://github.com/user-attachments/assets/ead5e084-38fa-47d3-bb72-c7b5f6d3a8fc)
+
 
 
