@@ -43,10 +43,10 @@ https://github.com/user-attachments/assets/c2056cc0-82df-4206-870e-7f17f8bc2e8c
 ![image](https://github.com/user-attachments/assets/760005bc-ab23-468b-9bbc-a086e2928f28)
 
 # Spotify India Top Tracks Page
-![image](https://github.com/user-attachments/assets/79354ae9-8051-4ddf-91ec-3816bd13fb68)
+![image](https://github.com/user-attachments/assets/2e58ad4f-aa04-4552-b8b7-82951b77e341)
 
 # Spotify India Top Tracks Page - Scroll
-![image](https://github.com/user-attachments/assets/03c9518d-0096-4bc0-8fbf-6f8d713eebff)
+![image](https://github.com/user-attachments/assets/2b18bc81-3964-4cfd-94da-a0bb68f3067a)
 
 # Spotify Track Page
 ![image](https://github.com/user-attachments/assets/5bacd712-d590-421b-a645-1525033e3c02)
