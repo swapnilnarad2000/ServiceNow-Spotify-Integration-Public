@@ -26,6 +26,7 @@ ServiceNow REST Integration with Spotify
     * Visit the Outbound Rest Message module and visit Spotify Integrations and Spotify Integrations v2 and click on Related Link "Get oAuth Token" and a pop up will open that will close automatically and you are all set.
     * If you receive some invalid response or error and pop up dont get closed automatically then you might have made some mistake during setting up Oauth credentials or redirect URIs etc.
     * Visit https://<instance_prefix>.service-now.com/spotify to see the created app.
+### Note: To populate sample tracks and region-wise playlist data on the instance, head to respective list views of table and import the demo data provided. 
   
 # Demo Video
 https://github.com/user-attachments/assets/c2056cc0-82df-4206-870e-7f17f8bc2e8c
